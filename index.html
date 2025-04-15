@@ -3,90 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En Memoria de [Nombre Completo de tu Papá]</title> <!-- CAMBIA ESTO -->
+    <title>En Memoria de Waldo Leonardo Zevallos Chavez</title>
+    <!-- Enlazamos la hoja de estilos que crearemos después -->
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>En Memoria de<br>[Nombre Completo de tu Papá]</h1> <!-- CAMBIA ESTO -->
-            <p class="dates">[Año de Nacimiento] - [Año de Fallecimiento]</p> <!-- CAMBIA ESTO -->
-        </header>
 
-        <!-- Opcional: Foto Principal -->
-        <div class="main-photo">
-            <!-- CAMBIA 'images/foto-principal.jpg' por la ruta a tu foto -->
-            <!-- Si no quieres foto principal, BORRA esta sección <div class="main-photo">...</div> -->
-            <img src="images/foto-principal.jpg" alt="Retrato de [Nombre de tu Papá]"> <!-- CAMBIA ESTO -->
-        </div>
+    <header>
+        <h1>En Memoria de Mi Padre</h1>
+        <h2>Waldo Leonardo Zevallos Chavez (1941-2024)</h2>
+    </header>
 
-        <section id="biography">
-            <h2>Su Historia</h2>
-            <p>
-                <!-- CAMBIA ESTE TEXTO por la biografía real -->
-                Este es el lugar para compartir recuerdos, anécdotas, y hablar sobre la vida
-                de tu papá. Describe quién era, qué le apasionaba, su legado...
-            </p>
-            <p>
-                Puedes añadir más párrafos aquí si necesitas más espacio para contar su historia.
-                Recuerda su carácter, sus enseñanzas, momentos especiales compartidos.
-            </p>
+    <main>
+        <!-- Sección para la Foto Principal (luego añadiremos laureles con CSS) -->
+        <section class="foto-principal-contenedor">
+            <img id="foto-principal" 
+                 src="imagenes/Mi_Padre_Waldo_Leonardo_Zevallos_Chavez_1941-2024.jpg" 
+                 alt="Mi Padre Waldo Leonardo Zevallos Chavez 1941-2024">
+            <!-- Más adelante, podríamos añadir un elemento para los laureles aquí si es necesario, o manejarlo solo con CSS sobre la imagen -->
         </section>
 
-        <section id="gallery">
-            <h2>Galería de Recuerdos</h2>
-            <div class="photo-grid">
-                <!-- CAMBIA 'src' y 'alt' por tus fotos. Añade o quita etiquetas <img> -->
-                <img src="images/galeria-foto1.jpg" alt="Descripción de la foto 1">
-                <img src="images/galeria-foto2.jpg" alt="Descripción de la foto 2">
-                <img src="images/galeria-foto3.jpg" alt="Descripción de la foto 3">
-                <img src="images/galeria-foto4.jpg" alt="Descripción de la foto 4">
+        <!-- Sección para el Poema (luego añadiremos fondo de pergamino con CSS) -->
+        <section id="poema-contenedor">
+            <h2>Para Papá</h2>
+            <div class="poema-texto">
+                <p>
+                    Corazón sin puerta, mano tendida,<br>
+                    Alma generosa, a la vida unida.<br>
+                    Amigo leal de risa sincera,<br>
+                    La camaradería fue tu bandera.<br>
+                    <br>
+                    Amante del sol y la tierra viva,<br>
+                    Del buen sabor que el paladar motiva.<br>
+                    La charla amena, la anécdota al vuelo,<br>
+                    Y esa cerveza helada bajo el cielo.<br>
+                    <br>
+                    Vestiste el verde con honor profundo,<br>
+                    Lejos de sombras, limpio en este mundo.<br>
+                    "Mi gente", decías, con voz sentida,<br>
+                    Por tus soldados, ofrecías la vida.<br>
+                    <br>
+                    Con voz de mando, firme Artillero,<br>
+                    Serviste a la Patria, leal y certero.<br>
+                    Por cada destino que el deber marcó,<br>
+                    Tu huella honorable allí quedó.<br>
+                    <br>
+                    A tus hijos diste adoración,<br>
+                    Fuimos tu orgullo, tu mejor canción.<br>
+                    Y aunque el camino se separara,<br>
+                    Tu amor constante nos cuidó y ampara.<br>
+                    <br>
+                    Contigo anduve Perú querido,<br>
+                    En cada anécdota, tiempo vivido.<br>
+                    Narrador nato, ¡qué gracia tenías!<br>
+                    Con tus historias, cuánto reías.<br>
+                    <br>
+                    Espíritu libre, soñador, bohemio,<br>
+                    En cada idea ponías tu empeño.<br>
+                    Mas tu riqueza, de distinta suerte,<br>
+                    Era el amor que te hacía más fuerte.<br>
+                    <br>
+                    Tu risa fuerte ya no la escucho,<br>
+                    Y hoy te extraño, papá, ¡te extraño mucho!<br>
+                    Pero tu huella sigue aquí, serena,<br>
+                    Tu amor inmenso es lo que me llena.
+                </p>
             </div>
         </section>
 
-        <section id="poem">
-            <h2>Poema / Himno</h2>
-            <!-- ELIGE UNA de las dos opciones (blockquote o pre) y BORRA la que no uses -->
-
-            <!-- Opción 1: Poema -->
-            <blockquote>
-                "Aquí pega el texto del poema completo.<br>
-                Puedes usar <br> para saltos de línea."
-            </blockquote>
-
-            <!-- Opción 2: Himno (formato exacto) -->
-            <!-- <pre>
-[Pega aquí el texto del himno.
- Se respetarán los espacios
- y los saltos de línea.]
-            </pre> -->
-        </section>
-
-        <section id="video">
-            <h2>Video Recuerdo</h2>
+        <!-- Sección de Videos -->
+        <section class="videos-contenedor">
+            <h2>Recuerdos en Video</h2>
             <div class="video-wrapper">
-                <!-- BORRA ESTE iframe de ejemplo y PEGA el código <iframe> de TU video de YouTube/Vimeo -->
-                <iframe width="560" height="315" src="URL_DEL_VIDEO_DE_YOUTUBE_O_VIMEO" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Himno de la Artillería del Perú</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q9hZ-__g4Fs" 
+                        title="Himno de la Artillería del Perú" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
             </div>
-            <!-- Si prefieres solo un enlace, comenta el div anterior y descomenta esto: -->
-            <!-- <p>Puedes ver un video homenaje haciendo clic <a href="URL_DEL_VIDEO" target="_blank" rel="noopener noreferrer">aquí</a>.</p> -->
+            <div class="video-wrapper">
+                <p>Marcha Militar Tupac Amaru</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wiJi8Emck1w" 
+                        title="Marcha Militar Tupac Amaru" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
+            </div>
+            <div class="video-wrapper">
+                 <p>Hacia tu libertad - Waldo Zevallos</p> <!-- Asumiendo este es el título que querías -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fztJUTa2jRk" 
+                        title="Hacia tu libertad - Waldo Zevallos" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
+            </div>
         </section>
 
-        <section id="message">
-            <h2>Un Mensaje Final</h2>
-            <p>
-                <!-- CAMBIA ESTE TEXTO por tu mensaje final -->
-                Siempre estarás en nuestros corazones. Tu luz y tu amor nos guiarán siempre.
-            </p>
-        </section>
+        <!-- Sección Galería de Fotos -->
+        <section class="galeria-contenedor">
+            <h2>Galería de Recuerdos</h2>
+            
+            <div class="foto-galeria">
+                <img src="imagenes/Mis_padres_ante_el_santisimo.jpeg" alt="Mis padres ante el santísimo">
+                <p>Mis padres ante el santísimo.</p>
+            </div>
 
-    </div> <!-- Fin del .container -->
+            <div class="foto-galeria">
+                <img src="imagenes/Mi_padre_en_su_matrimonio_juntoabuelitaJuanita.jpeg" alt="Mi padre en su matrimonio junto a su madre, mi abuela Juanita">
+                <p>Mi padre, en su matrimonio al lado de su madre, mi abuela Juanita.</p>
+            </div>
+
+            <div class="foto-galeria">
+                <img src="imagenes/Mis_padres_sellando_su_union_sacramental.jpeg" alt="Mis padres sellando su unión sacramental">
+                <p>Mis padres sellando su unión sacramental.</p>
+            </div>
+
+            <div class="foto-galeria">
+                <img src="imagenes/Mis_padres_matrimonio_conjuntamente_oficiales_armas.jpeg" alt="Mis padres con oficiales de armas en su matrimonio">
+                <p>Mis padres con oficiales de armas en su matrimonio.</p>
+            </div>
+            
+        </section>
+    </main>
 
     <footer>
-        <p>Creado con amor por [Tu Nombre o Familia]</p> <!-- CAMBIA ESTO -->
+        <!-- Puedes añadir un pequeño pie de página si lo deseas más adelante -->
+        <p>© 2024 - Un recuerdo con amor.</p>
     </footer>
 
 </body>
